@@ -1,3 +1,4 @@
+import Feedback from "../components/Feedback";
 import Hero from "../components/Hero";
 import OurService from "../components/OurService";
 import Parallex from "../components/Parallex";
@@ -15,6 +16,7 @@ function Home() {
       </p>
       <Parallex />
       <OurService />
+      <Feedback />
     </main>
   );
 }

@@ -3,14 +3,16 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between w-[85%] m-auto py-4 px-4">
-      <div>
+    <nav className="flex justify-between w-[85%] mx-auto py-4 px-4">
+      <p>
+        Kanatal Orchids
+        <hr />
+      </p>
+      <div className="flex gap-8">
         <NavLink to="/">
-          Rental
+          Home
           <hr />
         </NavLink>
-      </div>
-      <div className="flex gap-8">
         <NavLink to="/services">
           Services
           <hr />

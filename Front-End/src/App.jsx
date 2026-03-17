@@ -10,9 +10,9 @@ import Dashboard from "./pages/Dashboard.jsx";
 
 function App() {
   return (
-    <div>
+    <div className="bg-[#012636] text-[#b2ebf2]">
       <Navbar />
-      <main className="mx-auto font-mono w-[85%]">
+      <main className="mx-auto bg-[#e0f7fa] text-black">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />

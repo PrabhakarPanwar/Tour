@@ -6,10 +6,10 @@ function Package() {
             <center>
                 <h1 className='text-xl'>Camping</h1>
                 <p>lorem</p>
-                </center>
+            </center>
             <center>
                 <h1 className='text-xl'>Treking</h1>
-                </center>
+            </center>
             <center>
                 <h1 className='text-xl'>Bonfire</h1>
             </center>

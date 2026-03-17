@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="">
       <div className="w-[85%] m-auto">
         <div className="flex justify-around px-5 py-10">
           <section>

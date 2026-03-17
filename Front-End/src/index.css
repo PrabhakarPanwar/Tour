@@ -9,16 +9,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "PoiretOne";
-  src: url("/fonts/PoiretOne-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-html {
-  background-color: #e7decf;
-}
 
 nav hr {
   height: 2px;
@@ -31,7 +21,26 @@ nav hr {
   scale: 1;
 }
 
-body {
-/* background-image: linear-gradient(100deg, #a1c4fd 0%, #c2e9fb 100%); */
-background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+/* Frosted glass button */
+button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
 }
+
+/* Hover effect */
+button:hover {
+  background: linear-gradient(135deg, #203a43, #2c5364);
+  color: #ffffff;
+}
+
+h2{
+ font-size: larger;
+}
+
+input,textarea{
+  padding: 5px;
+  outline: none;
+}
+
