@@ -25,17 +25,17 @@ export const plans = [
   {
     title: "Trekking",
     image: trekking,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit",
+    desc: "Book your trekking adventure today and explore breathtaking trails surrounded by nature’s beauty. Step into the wild and make memories that last forever.",
   },
   {
     title: "Bonfire",
     image: bonfire,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit",
+    desc: "Reserve your bonfire evening now—gather around the flames, share stories, and enjoy the warmth under the open sky.",
   },
   {
     title: "Camping",
     image: camping,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit",
+    desc: "Secure your camping spot and spend the night under a blanket of stars. Experience peace, adventure, and the magic of the outdoors.",
   },
 ];
 

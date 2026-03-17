@@ -18,7 +18,7 @@ function OurService() {
             <p className="pb-3">
               {i.desc}
             </p>
-            <Link className="text-xl py-3 font-bold font-mono">
+            <Link to="/contact" className="text-xl py-3 font-bold font-mono">
               <button className="group-hover:bg-slate-400 active:scale-[0.9]">
                 Book Your {i.title}
               </button>

@@ -13,10 +13,10 @@ function Navbar() {
           Home
           <hr />
         </NavLink>
-        <NavLink to="/services">
+        {/* <NavLink to="/services">
           Services
           <hr />
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/gallery">
           Photo Gallery
           <hr />

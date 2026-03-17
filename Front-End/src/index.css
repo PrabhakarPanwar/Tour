@@ -9,7 +9,6 @@
   font-style: normal;
 }
 
-
 nav hr {
   height: 2px;
   background-color: grey;
@@ -35,12 +34,21 @@ button:hover {
   color: #ffffff;
 }
 
-h2{
- font-size: larger;
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: FrederickaTheGreat;
+  letter-spacing: 4px;
 }
 
-input,textarea{
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+input,
+textarea {
   padding: 5px;
   outline: none;
 }
-

@@ -8,7 +8,7 @@ function Hero() {
         <div style={{ backgroundImage: `url(${assets.village})` }} className='bg-cover bg-center scroll-smooth h-[80vh] rounded-xl flex items-center'>
             <div className='text-center w-[35%] flex flex-col gap-5'>
                 <h2 className='font-bold font-poiret'>Kanatal Orchids</h2><hr className='bg-black mx-auto w-20 h-[3px]' />
-                <p className='text-5xl font-fredericka'>The Place of your dreams</p>
+                <h1 className='font-fredericka'>The Place of your dreams</h1>
                 <h2 className=' font-bold font-poiret'>Discover Kanatal</h2><hr className='bg-black mx-auto w-20 h-[3px]' />
             </div>
         </div>
