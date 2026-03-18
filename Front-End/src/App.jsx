@@ -10,7 +10,7 @@ import Dashboard from "./pages/Dashboard.jsx";
 
 function App() {
   return (
-    <div className="bg-[#012636] text-[#b2ebf2]">
+    <div className="bg-[#012636] text-[#b2ebf2] overflow-hidden">
       <Navbar />
       <main className="mx-auto bg-[#e0f7fa] text-black">
         <Routes>
