@@ -5,12 +5,11 @@ import { UserContext } from "../context/UserContext";
 function OurService() {
   const { plans } = useContext(UserContext);
   return (
-    <div className="text-center  py-5">
-      <h1 className=" text-3xl pb-10">
-        Our Services
-        <hr className="bg-black mx-auto w-16 h-[3px]" />
+    <div className="py-5">
+      <h1 className=" text-3xl pb-10 ">
+        <span className="border-b-4 border-black">Our Services</span>
       </h1>
-      <div className="flex gap-4">
+      <div className="flex flex-wrap lg:flex-nowrap gap-4">
         {plans.map((i) => (
           <div className=" w-full shadow-2xl group p-5 transition-transform hover:scale-[1.03] hover:translate-y-2 group rounded-lg ">
             <img className="h-[350px] w-full rounded-lg object-cover group-hover:opacity-[90%] " src={i.image} alt={i.title} />

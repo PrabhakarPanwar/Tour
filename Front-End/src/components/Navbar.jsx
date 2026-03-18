@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between w-[85%] mx-auto py-4 px-4">
+    <nav className="flex justify-between mx-auto py-4 px-4">
       <p>
         Kanatal Orchids
         <hr />
       </p>
-      <div className="flex gap-8">
+      <div className="gap-8 hidden md:flex ">
         <NavLink to="/">
           Home
           <hr />
@@ -25,6 +25,12 @@ function Navbar() {
           Contact Us
           <hr />{" "}
         </NavLink>
+      </div>
+
+      {/* Hamburger Menu */}
+
+      <div style={{ backgroundImage: url("") }} className="">
+
       </div>
     </nav>
   );

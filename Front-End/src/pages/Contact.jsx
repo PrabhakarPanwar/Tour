@@ -5,7 +5,7 @@ import background from "../assets/img/background.jpg"
 function Contact() {
   return (
     <main className='flex flex-col'>
-      <h1 style={{ backgroundImage: `url(${background})`, backgroundPositionY: "55%", backgroundSize: "cover" }} className='flex pt-[120px] justify-center h-[50vh] w-full'>Contact</h1>
+      <h1 style={{ backgroundImage: `url(${background})`, backgroundPositionY: "55%", backgroundSize: "cover" }} className='flex pt-[140px] justify-center h-[50vh] w-full'>Contact</h1>
       <div className='flex justify-center py-20'>
         <div className='w-[40%]'>
           <h2 className='underline'>Contact Us</h2>
