@@ -9,7 +9,11 @@
   font-style: normal;
 }
 
- hr {
+body {
+  overflow-x: hidden;
+}
+
+hr {
   height: 2px;
   background-color: grey;
   scale: 0;

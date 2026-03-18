@@ -10,8 +10,8 @@ function OurService() {
         <span className="border-b-4 border-black">Our Services</span>
       </h1>
       <div className="flex flex-wrap lg:flex-nowrap gap-4">
-        {plans.map((i) => (
-          <div className=" w-full shadow-2xl group p-5 transition-transform hover:scale-[1.03] hover:translate-y-2 group rounded-lg ">
+        {plans.map((i, index) => (
+          <div key={index} className=" w-full shadow-2xl group p-5 transition-transform hover:scale-[1.03] hover:translate-y-2 group rounded-lg ">
             <img className="h-[350px] w-full rounded-lg object-cover group-hover:opacity-[90%] " src={i.image} alt={i.title} />
             <h1 className="font-fredericka text-3xl py-5">{i.title}</h1>
             <p className="pb-3">
