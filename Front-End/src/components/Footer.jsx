@@ -6,23 +6,28 @@ function Footer() {
     <footer className="m-auto">
       <center className="flex flex-col md:flex-row gap-3 justify-center md:justify-around px-5 py-10">
         <section>
-          <strong><h2 className="underline">Address</h2></strong>
-          <p>Kanatal Orchids</p>
-          <p>Chamba-Mussoorie Rd, Kanatal</p>
-          <p>Uttarakhand 249145</p>
+          <strong className=""><h2 className="border-b w-1/4 md:w-1/6 lg:w-1/2 ">Address </h2></strong>
+          <div className="pt-4">
+            <p>Kanatal Orchids</p>
+            <p>Chamba-Mussoorie Rd, Kanatal</p>
+            <p>Uttarakhand 249145</p>
+          </div>
         </section>
         <section>
-          <strong><h2 className="underline">Contact Us</h2></strong>
-          <p></p>
-          <p>rental@gmail.com</p>
-          <a href={"tel:+91234567890"} className=''>+91 234 567 89 </a>
+          <strong><h2 className="border-b w-1/3 md:w-1/5 lg:w-36 ">Contact Us </h2></strong>
+          <div className="pt-4">
+            <p>kanatalOrchids@gmail.com</p>
+            <a href={"tel:+91234567890"} className=''>+91 234 567 89 </a>
+          </div>
         </section>
-        <section className="flex flex-col ">
-          <strong><h2 className="underline">Pages</h2></strong>
-          <NavLink to="/">Home<hr className="w-1/6" /></NavLink>
-          <NavLink to="/gallery">Photo Gallery<hr className="w-1/6" /></NavLink>
-          <NavLink to="/contact">Contact Us<hr className="w-1/6" /></NavLink>
-          {/* <NavLink to="/services">Services<hr className="w-1/6"/></NavLink> */}
+        <section className=" ">
+          <strong><h2 className="border-b w-20">Pages </h2></strong>
+          <div className="flex flex-col pt-4">
+            <NavLink to="/">Home<hr className="w-14"/></NavLink>
+            <NavLink to="/gallery">Photo Gallery<hr className="w-20"/></NavLink>
+            <NavLink to="/contact">Contact Us<hr className="w-20"/></NavLink>
+            {/* <NavLink to="/services">Services<hr className="w-1/6"/></NavLink> */}
+          </div>
         </section>
       </center>
       <hr className="bg-[#e6dece] h-[2px]" />
