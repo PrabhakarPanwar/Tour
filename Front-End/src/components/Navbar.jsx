@@ -34,7 +34,7 @@ function Navbar() {
 
       <div style={{ backgroundImage: `url(${menu_icon})`, backgroundSize: "cover" }} className="h-5 w-5 cursor-pointer md:hidden invert" onClick={() => setHamtrigger(!hamtrigger)}> </div>
 
-      <section className={hamtrigger ? ("absolute translate-x-0 z-10 text-center transition-transform right-0 top-[56px] md:hidden") : ("absolute transition-transform translate-x-full right-0 top-[56px]")}>
+      <section className={hamtrigger ? ("absolute translate-x-0 z-10  transition-transform text-center right-0 top-[56px] md:hidden") : ("absolute transition-transform text-center translate-x-full right-0 top-[56px]")}>
         <div className="gap-8 bg-slate-900 p-3">
           <NavLink to="/">
             Home
