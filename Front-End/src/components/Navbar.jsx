@@ -1,6 +1,8 @@
+
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import menu_icon from "../assets/img/menu_icon.png"
+import { motion } from "framer-motion"
 
 function Navbar() {
 
@@ -16,10 +18,6 @@ function Navbar() {
           Home
           <hr />
         </NavLink>
-        {/* <NavLink to="/services">
-          Services
-          <hr />
-        </NavLink> */}
         <NavLink to="/gallery">
           Photo Gallery
           <hr />
@@ -34,8 +32,17 @@ function Navbar() {
 
       <div style={{ backgroundImage: `url(${menu_icon})`, backgroundSize: "cover" }} className="h-5 w-5 cursor-pointer md:hidden invert" onClick={() => setHamtrigger(!hamtrigger)}> </div>
 
-      <section className={hamtrigger ? ("absolute translate-x-0 z-10  transition-transform text-center right-0 top-[56px] md:hidden") : ("absolute transition-transform text-center translate-x-full right-0 top-[56px]")}>
-        <div className="gap-8 bg-slate-900 p-3">
+      <motion.section
+        layout
+        initial={{ x: "100%" }}
+        animate={{ x: hamtrigger ? "0%" : "100%" }}
+        transition={{
+          visualDuration: 0.2,
+        }}
+        className="absolute text-center right-0 top-[56px] md:hidden"
+      >
+        <div
+          className="gap-8 bg-slate-900 p-3">
           <NavLink to="/">
             Home
             <hr />
@@ -53,7 +60,7 @@ function Navbar() {
             <hr />
           </NavLink>
         </div>
-      </section>
+      </motion.section>
 
     </nav>
   );
