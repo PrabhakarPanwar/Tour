@@ -4,11 +4,10 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <footer className="m-auto ">
-      <center className="flex gap-3 justify-around px-5 py-10">
+      <center className="flex flex-wrap gap-3 justify-evenly px-5 py-10">
         <section>
-          <strong>
-            <h2 className="border-b md:w-1/6 lg:w-1/2 ">Address </h2>
-          </strong>
+
+          <span className="text-2xl border-b-2 border-white">Address</span>
           <div className="pt-4">
             <p>Kanatal Orchids</p>
             <p>Chamba-Mussoorie Rd, Kanatal</p>
@@ -16,9 +15,8 @@ function Footer() {
           </div>
         </section>
         <section>
-          <strong>
-            <h2 className="border-b md:w-1/5 lg:w-36 ">Contact Us </h2>
-          </strong>
+
+          <span className="text-2xl border-b-2 border-white">Contact Us</span>
           <div className="pt-4">
             <p>kanatalOrchids@gmail.com</p>
             <a href={"tel:+91234567890"} className="">
@@ -27,9 +25,8 @@ function Footer() {
           </div>
         </section>
         <section className=" ">
-          <strong>
-            <h2 className="border-b w-20">Pages </h2>
-          </strong>
+
+          <span className="text-2xl border-b-2 border-white">Pages</span>
           <div className="flex flex-col pt-4">
             <NavLink to="/">
               Home

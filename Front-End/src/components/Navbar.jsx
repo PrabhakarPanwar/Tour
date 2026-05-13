@@ -44,9 +44,9 @@ function Navbar() {
         transition={{
           duration: 0.2,
         }}
-        className="absolute text-center right-0 top-[56px] md:hidden"
+        className="absolute text-center z-10 right-0 top-[56px] md:hidden"
       >
-        <div className="gap-8 bg-slate-900 p-3">
+        <div className="gap-8 bg-slate-900 p-3 ">
           <NavLink to="/">
             Home
             <hr />

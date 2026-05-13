@@ -10,7 +10,7 @@ import SoloPackage from "./pages/SoloPackage.jsx";
 
 function App() {
   return (
-    <div className="bg-[#012636] text-[#b2ebf2] overflow-hidden">
+    <div className="bg-[#012636] text-[#b2ebf2]  overflow-hidden">
       <Navbar />
       <main className="mx-auto bg-[#e0f7fa] text-black">
         <Routes>

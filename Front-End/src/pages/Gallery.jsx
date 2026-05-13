@@ -6,7 +6,7 @@ function Gallery() {
   return (
     <div className="flex flex-wrap gap-5 p-5 justify-center relative">
       <center className="py-5">
-        <h1>Kanatal Orchids 📸 Photo Gallery</h1>
+        <h1><span className="border-b-4 border-black">Kanatal Orchids 📸 Photo Gallery</span></h1>
         <h2 className="w-[70%]">Welcome to a visual journey through the serene beauty of Kanatal Orchids. Every photograph showcased here was taken within the premises—either by the property owner or by our cherished guests. From misty mountain views to cozy interiors, these images capture the essence of your stay in the heart of nature.</h2>
       </center>
       {gallery.map((i, index) => (

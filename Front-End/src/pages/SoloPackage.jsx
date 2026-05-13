@@ -16,22 +16,22 @@ function SoloPackage() {
           <img className="" src={pack.image} alt={pack.title} />
         </section>
         <section >
-          <h2 className="text-3xl underline">Description</h2>
+          <h2><span className="text-3xl border-b-2 border-black">Description</span></h2>
           <p className="w-[80%] mx-auto" >{pack.desc}</p>
         </section>
-        <h2 className="text-3xl underline">HighLights</h2>
+        <h2><span className="text-3xl border-b-2 border-black">Highlights</span></h2>
         <ul className="list-disc list-inside">
           {pack.highlights.map((i, index) => (
             <li key={index}>{i}</li>
           ))}
         </ul>
-        <h2 className="text-3xl underline">Expect</h2>
+        <h2><span className="text-3xl border-b-2 border-black">Expects</span></h2>
         <ul className="list-disc list-inside">
           {pack.expect.map((i, index) => (
             <li key={index}>{i}</li>
           ))}
         </ul>
-        <h2 className="text-3xl underline">Why Choose ?</h2>
+        <h2><span className="text-3xl border-b-2 border-black">Why Choose ?</span></h2>
         <p className="w-[80%] mx-auto">{pack.whyChoose}</p>
       </div>
       <div className="text-xl py-3 font-bold font-mono">
