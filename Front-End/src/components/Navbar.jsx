@@ -1,18 +1,14 @@
-
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import menu_icon from "../assets/img/menu_icon.png"
-import { motion } from "framer-motion"
+import { Link, NavLink } from "react-router-dom";
+import menu_icon from "../assets/img/menu_icon.png";
+import { motion } from "framer-motion";
 
 function Navbar() {
-
-  const [hamtrigger, setHamtrigger] = useState(false)
+  const [hamtrigger, setHamtrigger] = useState(false);
 
   return (
     <nav className="flex justify-between mx-auto py-4 px-4 relative ">
-      <p>
-        Kanatal Orchids
-      </p>
+      <Link to="/">Kanatal Orchids</Link>
       <div className="gap-8 hidden md:flex ">
         <NavLink to="/">
           Home
@@ -30,27 +26,31 @@ function Navbar() {
 
       {/* Hamburger Menu */}
 
-      <div style={{ backgroundImage: `url(${menu_icon})`, backgroundSize: "cover" }} className="h-5 w-5 cursor-pointer md:hidden invert" onClick={() => setHamtrigger(!hamtrigger)}> </div>
+      <div
+        style={{
+          backgroundImage: `url(${menu_icon})`,
+          backgroundSize: "cover",
+        }}
+        className="h-5 w-5 cursor-pointer md:hidden invert"
+        onClick={() => setHamtrigger(!hamtrigger)}
+      >
+        {" "}
+      </div>
 
       <motion.section
         layout
         initial={{ x: "100%" }}
         animate={{ x: hamtrigger ? "0%" : "100%" }}
         transition={{
-          visualDuration: 0.2,
+          duration: 0.2,
         }}
         className="absolute text-center right-0 top-[56px] md:hidden"
       >
-        <div
-          className="gap-8 bg-slate-900 p-3">
+        <div className="gap-8 bg-slate-900 p-3">
           <NavLink to="/">
             Home
             <hr />
           </NavLink>
-          {/* <NavLink to="/services">
-          Services
-          <hr />
-        </NavLink> */}
           <NavLink to="/gallery">
             Photo Gallery
             <hr />
@@ -61,7 +61,6 @@ function Navbar() {
           </NavLink>
         </div>
       </motion.section>
-
     </nav>
   );
 }

@@ -23,19 +23,64 @@ export const assets = {
 
 export const plans = [
   {
+    id: 1,
     title: "Trekking",
     image: trekking,
-    desc: "Book your trekking adventure today and explore breathtaking trails surrounded by nature’s beauty. Step into the wild and make memories that last forever.",
+    desc: "Book your trekking adventure today and explore breathtaking trails surrounded by nature’s beauty. Step into the wild and make memories that last forever. Whether you’re climbing rugged mountain paths, crossing serene valleys, or walking alongside sparkling rivers, every step brings you closer to nature’s heart. Trekking isn’t just about reaching the destination—it’s about the journey, the stories you’ll collect, and the bond you’ll form with the great outdoors.",
+    highlights: [
+      "Scenic mountain trails and lush valleys",
+      "Opportunities for both beginners and seasoned trekkers",
+      "Close encounters with rivers, forests, and wildlife",
+      "Guided routes ensuring safety and adventure",
+    ],
+    expect: [
+      "Challenging yet rewarding climbs",
+      "Fresh air and breathtaking views",
+      "Group bonding and shared experiences",
+      "Moments of peace and self-reflection",
+    ],
+    whyChoose:
+      "Trekking offers a perfect balance of adventure and serenity. It’s a chance to push your limits, reconnect with nature, and create unforgettable memories.",
   },
   {
+    id: 2,
     title: "Bonfire",
     image: bonfire,
-    desc: "Reserve your bonfire evening now—gather around the flames, share stories, and enjoy the warmth under the open sky.",
+    desc: "Reserve your bonfire evening now—gather around the flames, share stories, and enjoy the warmth under the open sky. Imagine the crackling sound of wood, the glow of fire lighting up faces, and the laughter echoing into the night. A bonfire is more than just warmth—it’s a gathering of hearts, a place where friendships deepen and memories are made.",
+    highlights: [
+      "Crackling fire under the starry sky",
+      "Perfect for storytelling and music",
+      "Delicious snacks like roasted marshmallows",
+      "Relaxed atmosphere for bonding",
+    ],
+    expect: [
+      "Warmth and comfort in the cool night",
+      "Shared laughter and unforgettable stories",
+      "Singing, games, and lighthearted fun",
+      "A cozy end to your adventurous day",
+    ],
+    whyChoose:
+      "Bonfires bring people together in a magical way. It’s not just about fire—it’s about connection, joy, and creating lasting memories.",
   },
   {
+    id: 3,
     title: "Camping",
     image: camping,
-    desc: "Secure your camping spot and spend the night under a blanket of stars. Experience peace, adventure, and the magic of the outdoors.",
+    desc: "Secure your camping spot and spend the night under a blanket of stars. Experience peace, adventure, and the magic of the outdoors. Pitch your tent in a scenic clearing, listen to the symphony of crickets, and wake up to the golden rays of sunrise. Camping is about slowing down, disconnecting from the noise, and reconnecting with yourself and nature.",
+    highlights: [
+      "Starry night skies and sunrise views",
+      "Campfire cooking and outdoor meals",
+      "Peaceful environment away from city noise",
+      "Opportunities for hiking and exploration",
+    ],
+    expect: [
+      "Setting up tents and cozy sleeping bags",
+      "Bonding with friends or enjoying solitude",
+      "Nature’s sounds as your nighttime lullaby",
+      "Refreshing mornings with scenic beauty",
+    ],
+    whyChoose:
+      "Camping is the ultimate escape from routine. It lets you unplug, recharge, and immerse yourself in the wonders of nature.",
   },
 ];
 
