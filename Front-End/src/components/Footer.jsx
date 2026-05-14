@@ -17,30 +17,9 @@ function Footer() {
         <section>
 
           <span className="text-2xl border-b-2 border-white">Contact Us</span>
-          <div className="pt-4">
-            <p>kanatalOrchids@gmail.com</p>
-            <a href={"tel:+91234567890"} className="">
-              +91 234 567 89{" "}
-            </a>
-          </div>
-        </section>
-        <section className=" ">
-
-          <span className="text-2xl border-b-2 border-white">Pages</span>
-          <div className="flex flex-col pt-4">
-            <NavLink to="/">
-              Home
-              <hr className="w-14" />
-            </NavLink>
-            <NavLink to="/gallery">
-              Photo Gallery
-              <hr className="w-20" />
-            </NavLink>
-            <NavLink to="/contact">
-              Contact Us
-              <hr className="w-20" />
-            </NavLink>
-            {/* <NavLink to="/services">Services<hr className="w-1/6"/></NavLink> */}
+          <div className="mt-4 flex flex-col gap-3">
+            <a href="mailto:name@example.com" className=' font-bold '>📧 Email: <span className=" font-normal">kanatal@gmail.com</span></a>
+            <a href={"tel:+91234567890"} className=' font-bold '>📞 Phone:+<span className=" font-normal">91 234 567 89</span></a>
           </div>
         </section>
       </center>
