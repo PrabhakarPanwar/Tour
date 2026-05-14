@@ -18,9 +18,9 @@ function Contact() {
     setResult(data.success ? "Success!" : "Error");
   };
   return (
-    <main className='flex flex-col'>
-      <h1 style={{ backgroundImage: `url(${background})`, backgroundPositionY: "55%", backgroundSize: "cover" }} className='flex pt-[140px] justify-center h-[50vh] w-full'>Contact</h1>
-      <div className='flex flex-col md:flex-row justify-center py-20'>
+    <main className='flex flex-col gap-10'>
+      <h1 style={{ backgroundImage: `url(${background})`, backgroundPositionY: "55%", backgroundSize: "cover" }} className='flex items-center justify-center h-[50vh] w-full'>Contact</h1>
+      <div className='flex flex-col md:flex-row justify-center gap-3'>
         <div className='md:w-[40%] text-center'>
           <h2><span className="border-b-2 border-black">Contact Us</span></h2>
           <p className='w-[80%] mx-auto'>We’d love to hear from you! Whether you have a question, an idea, or just want to say hello, we’re always excited to connect. Fill out the form or drop us an email, and let’s start the conversation today.
@@ -31,7 +31,7 @@ function Contact() {
         <form className='md:w-[40%] my-4 flex flex-col gap-3 bg-slate-100 p-3 rounded-md' onSubmit={onSubmit}>
           <input className='bg-transparent border-b-2' type="text" name="name" placeholder='Full Name' required />
           <input className='bg-transparent border-b-2' type="email" name="email" placeholder='Your E-mail' required />
-          <input type="text" name="subject" placeholder='Subject/Purpose' />
+          <input className='bg-transparent border-b-2' type="text" name="subject" placeholder='Subject/Purpose' />
           <textarea className='bg-transparent border-b-2' name="message" placeholder='Message' required></textarea>
           <button className='bg-black text-cyan-50' type="submit">Submit</button>
           <p>{result}</p>

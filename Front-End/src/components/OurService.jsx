@@ -21,7 +21,7 @@ function OurService() {
               src={i.image}
               alt={i.title}
             />
-            <h1 className="font-fredericka text-3xl py-5">{i.title}</h1>
+            <h1 className="font-fredericka text-3xl py-5"><span className="text-3xl border-b-4 border-black">{i.title}</span></h1>
             <p className="pb-3">{i.desc}</p>
             <div className="text-xl py-3 font-bold font-mono">
               <button className="group-hover:bg-slate-400 active:scale-[0.9]">
