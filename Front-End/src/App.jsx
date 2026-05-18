@@ -7,6 +7,8 @@ import Contact from "./pages/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import SoloPackage from "./pages/SoloPackage.jsx";
+import AdminLogin from "./pages/AdminLogin.jsx";
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -18,10 +20,12 @@ function App() {
           <Route path="/package/:id" element={<SoloPackage />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/admin" element={<AdminLogin />} />
           <Route path="/admin/dashboard" element={<Dashboard />} />
         </Routes>
       </main>
       <Footer />
+      <ToastContainer />
     </div>
   );
 }
