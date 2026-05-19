@@ -1,28 +1,20 @@
-import React, { useContext } from 'react'
-import { UserContext } from '../context/UserContext'
+import React, { useState } from 'react'
+import Adding from '../components/Adding';
+import Deleting from '../components/Deleting';
 
 function Dashboard() {
-    const { assets } = useContext(UserContext)
+    const [tab, setTab] = useState("add")
     return (
-        <div>
-            <form className='flex gap-2' action="">
-                <section className='border-r-2 p-2 border-black'>
-                    <p><strong>Add +</strong></p>
-                    <p><strong>Update {"><"}</strong></p>
-                </section>
-                <section className='w-[70%]'>
-                    <div className='flex gap-3 flex-col'>
-                        <label className='h-20 w-20' htmlFor="image">
-                            <img className='rounded-full' src={assets.upload} alt="Upload" />
-                            <input className='hidden' type="file" id="image" accept='image/*' />
-                        </label>
-                        <input className='p-2' type="text" placeholder='title' />
-                        <input className='p-2' type="text" placeholder='description' />
-                    </div>
-                </section>
-            </form>
-        </div>
-    )
+        <>
+            <button className='bg-black text-white rounded-none' onClick={() => setTab("add")}>Upload Image</button>
+            <button className='bg-black text-white rounded-none' onClick={() => setTab("del")}>Delete Image</button>
+            <div className='flex flex-col gap-3 justify-center h-[100vh] w-[50%] mx-auto'>
+
+                {tab == "add" && <Adding />}
+                {tab == "del" && <Deleting />}
+            </div>
+        </>
+    );
 }
 
 export default Dashboard
